@@ -1,0 +1,235 @@
+// Modalka
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding-top: 40px;
+  padding-left: 41px;
+  padding-right: 39px;
+  padding-bottom: 69px;
+
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  background-color: #fff;
+}
+
+.form {
+  max-width: 448px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #212121;
+
+  &__title {
+    display: block;
+    margin-bottom: 12px;
+
+    font-family: Roboto;
+    color: $primary-text-color;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: none;
+  }
+
+  &__group {
+    margin-bottom: 10px;
+  }
+
+  &__lable {
+    margin-bottom: 4px;
+
+    text-align: start;
+
+    color: $title-text-color;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.172;
+    text-transform: none;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+  }
+
+  &__input-wrapper {
+    /* outline: 2px solid red; */
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+}
+
+.form__input {
+  display: inline-flex;
+  font-family: inherit;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  /* border: none; */
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  &:hover,
+  &:focus-within {
+    border: 1px solid $accent-color;
+    transition: $timing-function;
+  }
+
+  &:hover + .icon,
+  &:focus-within + .icon {
+    fill: $accent-color;
+    transition: $timing-function;
+  }
+}
+
+.form__tex {
+  display: inline-flex;
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: currentColor;
+
+  &:focus-within,
+  &:hover {
+    border: 1px solid $accent-color;
+    transition: $timing-function;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.assent {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 13px;
+  padding-right: auto;
+
+  &__lable {
+    display: flex;
+    text-align: start;
+
+    color: $title-text-color;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.172;
+    text-transform: none;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+  }
+
+  &__text {
+    display: inline-flex;
+    padding-left: 10px;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  &__link {
+    color: $accent-color;
+    text-decoration: underline;
+    padding-left: 3px;
+  }
+}
+
+.assent__checkbox + .assent__icon {
+  /* outline: 1px solid red; */
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  cursor: pointer;
+}
+
+.assent__checkbox + .assent__icon use {
+  display: none;
+}
+
+.assent__checkbox:checked + .assent__icon {
+  border: none;
+}
+
+.checkbox:checked + .icon-check use {
+  display: block;
+  border-color: #2196f3;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
+.form__btn-send {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  color: $second-accent-color;
+  background: $accent-color;
+}
+
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  padding: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  width: 30px;
+  height: 30px;
+}
+
+.btn-close use {
+  fill: #000000;
+}
+
+.btn-close:hover use,
+.btn-close:focus use {
+  fill: $accent-color;
+  transition: $timing-function;
+}

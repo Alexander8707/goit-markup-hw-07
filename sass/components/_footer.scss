@@ -1,0 +1,150 @@
+.footer {
+  background: $footer-color;
+}
+
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+// .address__container {
+//   margin-top: 20px;
+// }
+
+.address__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: $second-accent-color;
+}
+
+.address__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address__item {
+  color: $second-accent-color;
+  margin-top: 9px;
+}
+
+/* соцсети */
+
+.social {
+  margin-left: 70px;
+
+  padding-top: 12px;
+}
+
+.social__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $second-accent-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social__link:hover,
+.social__link:focus {
+  background: $accent-color;
+  transition: $timing-function;
+}
+
+.social__icon {
+  fill: $second-accent-color;
+}
+
+// SINGUP
+
+.singup {
+  display: flex;
+
+  padding-top: 12px;
+  margin-left: 93px;
+}
+
+.singup__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.singup__input {
+  display: flex;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.singup__button {
+  position: relative;
+  display: flex;
+  align-self: flex-end;
+  min-width: 200px;
+  height: 50px;
+  margin-left: 12px;
+}
+
+.singup__btn-submit {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  height: 50px;
+  padding-left: 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: $accent-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: $second-accent-color;
+  letter-spacing: 0.06em;
+}
+
+.singup__icon-submit {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: $second-accent-color;
+}
