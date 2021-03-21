@@ -205,8 +205,8 @@ li {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/image/baner.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/image/baner.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./image/baner.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./image/baner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -830,7 +830,7 @@ li {
   padding: 30px 32px;
 }
 
-.team-social__title {
+.team__social-title {
   margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
@@ -840,7 +840,7 @@ li {
   letter-spacing: 0.03em;
 }
 
-.team-social__text {
+.team__social-text {
   margin-bottom: 16px;
   color: #757575;
   font-weight: 400;
@@ -850,7 +850,7 @@ li {
   letter-spacing: 0.03em;
 }
 
-.team-social__list {
+.team__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,22 +860,22 @@ li {
   fill: #afb1b8;
 }
 
-.team-social__link {
+.team__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team__social-link {
   width: 44px;
   height: 44px;
   padding: 12px;
 }
 
-.team-social__link:hover, .team-social__link:focus {
+.team__social-link:hover, .team__social-link:focus {
   background: #2196f3;
   fill: #ffffff;
   border-radius: 50%;
   -webkit-transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-social__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .client__container {
