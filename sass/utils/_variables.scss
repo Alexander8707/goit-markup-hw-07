@@ -5,6 +5,7 @@ $second-accent-color: #ffffff;
 $primary-icon-color: #afb1b8;
 $footer-color: #2f303a;
 
+$cards-gap-buffer: calc(-1 * 30px);
+$cards-gap-distance: calc(100% / 3 - 30px);
 $cards-gap: 30px;
-
 $timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);

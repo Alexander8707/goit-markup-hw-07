@@ -4,7 +4,7 @@
 
 .footer__container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -39,8 +39,6 @@
 
 .social {
   margin-left: 70px;
-
-  padding-top: 12px;
 }
 
 .social__title {
@@ -89,8 +87,6 @@
 
 .singup {
   display: flex;
-
-  padding-top: 12px;
   margin-left: 93px;
 }
 

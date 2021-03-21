@@ -136,40 +136,40 @@
   }
 }
 
-.data {
+.team__box {
   padding: 30px 32px;
-
-  &__title {
-    margin-bottom: 10px;
-
-    color: $primary-text-color;
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    line-height: 1.19;
-
-    letter-spacing: 0.03em;
-  }
-
-  &__text {
-    margin-bottom: 16px;
-    color: $title-text-color;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    line-height: 1.19;
-
-    letter-spacing: 0.03em;
-  }
-
-  &__list {
-    display: flex;
-    justify-content: center;
-    fill: $primary-icon-color;
-  }
 }
 
-.data__link {
+.team-social__title {
+  margin-bottom: 10px;
+
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+}
+
+.team-social__text {
+  margin-bottom: 16px;
+  color: $title-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+}
+
+.team-social__list {
+  display: flex;
+  justify-content: center;
+  fill: $primary-icon-color;
+}
+
+.team-social__link {
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -184,7 +184,7 @@
   }
 }
 
-.data__item:not(:last-child) {
+.team-social__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -232,22 +232,22 @@
 
 // WORKS SHOW
 
-.gallery__container {
+.filter__container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.gallery__list {
+.filter__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.gallery__item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.gallery__btn {
+.filter__btn {
   padding: 6px 22px;
   min-width: 73px;
   min-height: 38px;
@@ -274,21 +274,21 @@
 
 /* CARDS WORKS */
 
-.set__list {
+.progect__list {
   display: flex;
   flex-wrap: wrap;
 
-  margin-left: calc(-1 * $cards-gap);
-  margin-top: calc(-1 * $cards-gap);
+  margin-left: $cards-gap-buffer;
+  margin-top: $cards-gap-buffer;
 }
 
-.set__item {
-  flex-basis: calc(100% / 3 - $cards-gap);
+.progect__item {
+  flex-basis: $cards-gap-distance;
   margin-left: $cards-gap;
   margin-top: $cards-gap;
 }
 
-.card-container {
+.progect__link {
   padding: 0px;
 
   min-width: 370px;
@@ -338,7 +338,7 @@
   }
 }
 
-.card-container:hover .thumb__overlay {
+.progect__link:hover .thumb__overlay {
   transform: translateY(0);
   transition: $timing-function;
 }

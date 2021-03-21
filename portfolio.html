@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charprogect="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -25,39 +25,39 @@
             <nav class="header__nav container">
 
                 <!-- лого -->
-                <div class="logo">
-                    <a href="./index.html" class="logo__link-ending">
-                        <span class="logo__link-started">Web</span>Studio
-                    </a>
-                </div>
+
+                <a href="./index.html" class="logo__link-ending">
+                    <span class="logo__link-started">Web</span>Studio
+                </a>
+
                 <!-- навигация -->
-                <ul class="site__list header__nav">
-                    <li class="site__item">
-                        <a href="./index.html" class="site__link ">Студия</a>
+                <ul class="site-nav__list ">
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="site-nav__link ">Студия</a>
                     </li>
 
-                    <li class="site__item">
-                        <a href="./portfolio.html" class="site__link site__link--current">Портфолио</a>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
                     </li>
 
-                    <li class="site__item">
-                        <a href="" class="site__link">Контакты</a>
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link">Контакты</a>
                     </li>
                 </ul>
 
 
                 <!-- регистрация  -->
-                <ul class="auth__list header__nav">
-                    <li class="auth__item">
-                        <a href="mailto:info@devstudio.com" class="auth__link ">
-                            <svg class="auth__icon" width="16" height="12">
+                <ul class="contacts__list header__nav">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link ">
+                            <svg class="contacts__icon" width="16" height="12">
                                 <use href="./image/sprite.svg#post"></use>
                             </svg>info@devstudio.com</a>
                     </li>
 
-                    <li class="auth__item">
-                        <a href="tel:+380961111111" class="auth__link ">
-                            <svg class="auth__icon" width="10" height="16">
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link ">
+                            <svg class="contacts__icon" width="10" height="16">
                                 <use href="./image/sprite.svg#phone"></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
@@ -67,30 +67,30 @@
     </header>
     <main>
         <!-- представление работ -->
-        <section class="gallery">
-            <div class="gallery__container">
+        <section class="filter">
+            <div class="filter__container container">
                 <h1 class="visually-hidden">наши работы</h1>
-                <ul class="gallery__list">
-                    <li class="gallery__item">
-                        <a class="gallery__btn" href="">Все</a>
+                <ul class="filter__list">
+                    <li class="filter__item">
+                        <a class="filter__btn" href="">Все</a>
                     </li>
-                    <li class="gallery__item">
-                        <a class="gallery__btn" href="">Веб-сайты</a>
+                    <li class="filter__item">
+                        <a class="filter__btn" href="">Веб-сайты</a>
                     </li>
-                    <li class="gallery__item">
-                        <a class="gallery__btn" href="">Приложения</a>
+                    <li class="filter__item">
+                        <a class="filter__btn" href="">Приложения</a>
                     </li>
-                    <li class="gallery__item">
-                        <a class="gallery__btn" href="">Дизайн</a>
+                    <li class="filter__item">
+                        <a class="filter__btn" href="">Дизайн</a>
                     </li>
-                    <li class="gallery__item">
-                        <a class="gallery__btn" href="">Маркетинг</a>
+                    <li class="filter__item">
+                        <a class="filter__btn" href="">Маркетинг</a>
                     </li>
                 </ul>
                 <!-- представление работ -->
-                <ul class="set__list">
-                    <li class="set__item">
-                        <div class="card-container">
+                <ul class="progect__list">
+                    <li class="progect__item">
+                        <a class="progect__link">
                             <div class="thumb">
                                 <img class="thumb__image" src="./image/img1a.jpg" alt="">
                                 <div class="thumb__overlay">
@@ -106,11 +106,11 @@
                                 <p class="card__text">Веб-сайт</p>
                             </div>
 
-                        </div>
+                        </a>
 
                     </li>
-                    <li class="set__item">
-                        <div class="card">
+                    <li class="progect__item">
+                        <a class="progect__link">
                             <div class="thumb">
                                 <img class="thumb__image" src="./image/img2a.jpg" alt="">
                                 <div class="thumb__overlay">
@@ -126,11 +126,11 @@
                                 <p class="card__text">Дизайн</p>
                             </div>
 
-                        </div>
+                        </a>
 
                     </li>
-                    <li class="set__item">
-                        <div class="card-container">
+                    <li class="progect__item">
+                        <a class="progect__link">
                             <div class="thumb">
                                 <img class="thumb__image" src="./image/img3a.jpg" alt="">
                                 <div class="thumb__overlay">
@@ -146,12 +146,12 @@
                                 <p class="card__text">Приложение</p>
                             </div>
 
-                        </div>
+                        </a>
 
 
                     </li>
-                    <li class="set__item">
-                        <div class="card-container">
+                    <li class="progect__item">
+                        <a class="progect__link">
                             <div class="thumb">
                                 <img class="thumb__image" src="./image/img4a.jpg" alt="">
                                 <div class="thumb__overlay">
@@ -167,11 +167,11 @@
                                 <p class="card__text">Маркетинг</p>
                             </div>
 
-                        </div>
+                        </a>
 
                     </li>
-                    <li class="set__item">
-                        <div class="card-container">
+                    <li class="progect__item">
+                        <a class="progect__link">
                             <div class="thumb">
                                 <img class="thumb__image" src="./image/img5a.jpg" alt="">
                                 <div class="thumb__overlay">
@@ -187,12 +187,12 @@
                                 <p class="card__text">Приложение</p>
                             </div>
 
-                        </div>
+                        </a>
 
 
                     </li>
-                    <li class="set__item">
-                        <div class="card-container">
+                    <li class="progect__item">
+                        <a class="progect__link">
                             <div class="thumb">
                                 <img class="thumb__image" src="./image/img6a.jpg" alt="">
                                 <div class="thumb__overlay">
@@ -208,12 +208,12 @@
                                 <p class="card__text">Веб-сайт</p>
                             </div>
 
-                        </div>
+                        </a>
 
 
                     </li>
-                    <li class="set__item">
-                        <div class="card-container">
+                    <li class="progect__item">
+                        <a class="progect__link">
                             <div class="thumb">
                                 <img class="thumb__image" src="./image/img7a.jpg" alt="">
                                 <div class="thumb__overlay">
@@ -229,12 +229,12 @@
                                 <p class="card__text">Дизайн</p>
                             </div>
 
-                        </div>
+                        </a>
 
 
                     </li>
-                    <li class="set__item">
-                        <div class="card-container">
+                    <li class="progect__item">
+                        <a class="progect__link">
                             <div class="thumb">
                                 <img class="thumb__image" src="./image/img8a.jpg" alt="">
                                 <div class="thumb__overlay">
@@ -250,12 +250,12 @@
                                 <p class="card__text">Маркетинг</p>
                             </div>
 
-                        </div>
+                        </a>
 
 
                     </li>
-                    <li class="set__item">
-                        <div class="card-container">
+                    <li class="progect__item">
+                        <a class="progect__link">
                             <div class="thumb">
                                 <img class="thumb__image" src="./image/img9a.jpg" alt="">
                                 <div class="thumb__overlay">
@@ -270,7 +270,7 @@
                                 <h3 class="card__title">Growing Business</h3>
                                 <p class="card__text">Приложение</p>
                             </div>
-                        </div>
+                        </a>
 
 
                     </li>
