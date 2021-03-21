@@ -18,6 +18,43 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   background-color: #fff;
+
+  &__btn-send {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    color: $second-accent-color;
+    background: $accent-color;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    padding: 0;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    width: 30px;
+    height: 30px;
+  }
+
+  &__btn-close use {
+    fill: #000000;
+  }
+
+  &__btn-close:hover use,
+  &__btn-close:focus use {
+    fill: $accent-color;
+    transition: $timing-function;
+  }
 }
 
 .form {
@@ -198,43 +235,6 @@
   appearance: none;
 
   position: absolute;
-}
-
-.form__btn-send {
-  text-align: center;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  color: $second-accent-color;
-  background: $accent-color;
-}
-
-.btn-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  padding: 0;
-  border-radius: 50%;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-
-  width: 30px;
-  height: 30px;
-}
-
-.btn-close use {
-  fill: #000000;
-}
-
-.btn-close:hover use,
-.btn-close:focus use {
-  fill: $accent-color;
-  transition: $timing-function;
 }
 
 .backdrop {
